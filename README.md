@@ -1,15 +1,16 @@
 ## Oliver Space Take-Home Instructions
 
-Your mission, if you choose to accept it, is to build out a mock of a product reviews flow. 
-This includes a page for users to submit their reviews as well as a page to read reviews.
+Your mission, if you choose to accept it, is to build out a mock of a product reviews flow. This includes a page for users to browse products, and a product detail page where users can read reviews and add their own.
 
 REQUIREMENTS:
-- Create a page where a user can view all of the reviews for a given product
-    - This page should also display the average rating for this product
-- Create a page where a user can review a given product with the following information:
+- Match this figma document as closely as possible https://www.figma.com/file/PEXoYYihVaoiEm7URhyLft/ENG-Test?node-id=0%3A1
+- Create a page where a user can view all of the products
+    - This page should also display the price for each product
+    - The user should be able to sort by price
+- Create a page where a user can see reviews of a given product with the following information:
     - Their name (the author)
     - A star rating
-    - Headline text (a title for their review)
+    - location
     - The body of the review (a longer paragraph)
 
 Please spend 2 hours completing this task to whatever extent you can finish, but don't
