@@ -18,6 +18,8 @@ code {
   background-color: #f4f5f6;
 }
 
+//////////////// HEADER
+
 .Header {
   padding: 22px 66px;
   display: flex;
@@ -29,12 +31,12 @@ code {
     width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0;
     display: flex;
     align-items: center;
 
     .logo-wrapper {
-      margin-left: 40px;
+      margin-left: 0px;
   
       img {
         width: 95px;
@@ -50,6 +52,8 @@ code {
   }
 }
 
+//////////////// PRODUCT GRID
+
 .Products {
   display: flex;
   justify-content: center;
@@ -58,7 +62,7 @@ code {
 }
 
 .ProductGrid {
-  padding: 22px 66px;
+  padding: 22px 0px;
   max-width: 1280px;
   width: 100%;
   box-sizing: border-box;
@@ -133,4 +137,106 @@ select {
   font-family: 'Assistant', sans-serif;
   font-size: 16px;
   font-weight: 500;
+}
+
+//////////////// PRODUCT DETAIL PAGE
+
+.ProductDetail {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+// product
+.product-individual {
+  display: flex;
+  max-width: 1280px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 4em auto;
+
+  .product-image {
+    width: 50%;
+
+    img {
+      width: 100%;
+      max-width: 600px;
+    }
+  }
+
+  .product-details {
+    width: 50%;
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+    }
+  }
+}
+
+// reviews
+.reviews-header {
+  max-width: 1280px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 2em auto 0;
+
+  h2 {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 2.5em;
+  }
+
+  h4 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 0;
+    padding: 0;
+  }
+}
+
+.reviews-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 3em auto;
+
+  .review {
+    display: flex;
+    padding: 1em;
+    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+
+    &:first-child {
+      border-bottom: 0;
+    }
+
+    .review-author {
+      width: 20%;
+      border-right: 1px solid #C4C4C4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .review-body {
+      width: 80%;
+      padding: 4em;
+    }
+  }
+}
+
+.leave-review {
+  max-width: 1280px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 3em auto;
+  background-color: #f8f8f8;
+
+  h2 {
+    padding: 1em;
+    margin: 0;
+  }
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 
 import '../Styles/Home.scss';
@@ -6,6 +7,8 @@ import chair from '../Images/chair.png';
 
 function ProductGrid() {
     const [products, setProducts] = useState([]);
+
+    const history = useHistory();
 
     const getProducts = () => {
         // use axios to get data from json file
@@ -19,6 +22,10 @@ function ProductGrid() {
     useEffect(() => {
         getProducts();
     },[])
+
+    const goToProductDetail = () => {
+        history.push('/product-detail')
+    }
 
     return (
         <div className="ProductGrid">
@@ -38,7 +45,7 @@ function ProductGrid() {
                     const dollars = (product.priceCents/ 100).toLocaleString("en-US", {style:"currency", currency:"USD"});
 
                     return (
-                        <div key={product.id} className="product">
+                        <div key={product.id} className="product" onClick={() => goToProductDetail()}>
                             <div className="product-image"><img src={chair} alt="product" /></div>
                             <div className="product-info">
                                 <p className="product-name">{product.name}</p>
