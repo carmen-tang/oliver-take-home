@@ -5,7 +5,8 @@ import {
   Route
 } from "react-router-dom";
 
-import Home from './Components/Home';
+// import Home from './Components/Home';
+import Products from './Components/Products';
 
 export default function OliverTakeHome() {
   return (
@@ -13,7 +14,8 @@ export default function OliverTakeHome() {
       <div>
         <Switch>
           <Route exact path="/">
-            <Home />
+            {/* <Home /> */}
+            <Products />
           </Route>
 
         </Switch>
